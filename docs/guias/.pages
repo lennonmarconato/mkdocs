@@ -1,0 +1,5 @@
+title: Guias do Time
+nav:
+  - onboarding.md
+  - git-workflow.md
+  - ...

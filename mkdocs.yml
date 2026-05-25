@@ -1,0 +1,99 @@
+# ── Metadata ──
+site_name: Wiki - Teste
+site_description: Documentação interna da equipe
+
+# ── Repositório (botão "editar página") ──
+repo_url: https://github.com/lennonmarconato/mkdocs
+repo_name: mkdocs
+edit_uri: edit?path=docs/
+
+# ── Tema ──
+theme:
+  name: material
+  language: pt-BR
+  features:
+    # Navegação
+    - navigation.instant           # SPA-like
+    - navigation.instant.progress  # barra de progresso
+    - navigation.tracking          # URL muda ao rolar
+    # - navigation.sections          # títulos na sidebar
+    - navigation.expand            # expande auto
+    - navigation.top               # botão voltar ao topo
+    # Busca
+    - search.suggest               # autocompletar busca
+    - search.highlight             # destaca termo
+    # Code blocks
+    - content.code.copy            # botão copiar código
+    - content.code.annotate        # anotações no código
+    - content.tabs.link            # sincroniza tabs
+    # Botões de ação
+    - content.action.edit          # ← botão "Editar"
+    - content.action.view          # ← botão "Ver fonte"
+  palette:
+    - scheme: slate
+      primary: blue
+      accent: cyan
+      toggle:
+        icon: material/brightness-4
+        name: Mudar para tema claro
+    - scheme: default
+      primary: blue
+      accent: cyan
+      toggle:
+        icon: material/brightness-7
+        name: Mudar para tema escuro
+  font:
+    text: Roboto
+    code: JetBrains Mono
+  icon:
+    repo: fontawesome/brands/git-alt
+    # edit: material/pencil
+    # view: material/eye
+
+# ── Extensões Markdown ──
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.caret
+  - pymdownx.tilde
+  - attr_list
+  - md_in_html
+  - def_list
+  - footnotes
+  - abbr
+  - toc:
+      permalink: true
+
+# ── Plugins ──
+plugins:
+  - search:
+    # lang: pt
+  - tags
+  - glightbox
+  - git-revision-date-localized:
+      type: timeago
+      locale: pt
+      enable_creation_date: true
+      fallback_to_build_date: true   
+  - awesome-pages
+
+# ── CSS Extra ──
+extra_css:
+  - assets/css/custom.css
