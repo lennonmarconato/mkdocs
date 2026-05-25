@@ -1,6 +1,8 @@
 # ── Metadata ──
 site_name: Wiki - Teste
 site_description: Documentação interna da equipe
+site_url: https://lennonmarconato.github.io/mkdocs/
+
 
 # ── Repositório (botão "editar página") ──
 repo_url: https://github.com/lennonmarconato/mkdocs
