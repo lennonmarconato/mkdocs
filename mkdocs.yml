@@ -5,7 +5,7 @@ site_description: Documentação interna da equipe
 # ── Repositório (botão "editar página") ──
 repo_url: https://github.com/lennonmarconato/mkdocs
 repo_name: mkdocs
-edit_uri: edit?path=docs/
+edit_uri: edit/main/docs/
 
 # ── Tema ──
 theme:
@@ -84,7 +84,7 @@ markdown_extensions:
 # ── Plugins ──
 plugins:
   - search:
-    # lang: pt
+      lang: pt
   - tags
   - glightbox
   - git-revision-date-localized:
