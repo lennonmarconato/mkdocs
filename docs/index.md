@@ -16,7 +16,6 @@ decisões arquiteturais e runbooks operacionais.
 |:------|:----------|
 | [Onboarding](guias/onboarding.md) | Seu primeiro dia |
 | [Git Workflow](guias/git-workflow.md) | Como trabalhamos |
-| [Arquitetura](arquitetura/visao-geral.md) | Visão geral |
 | [Deploy](runbooks/deploy-producao.md) | Runbook de deploy |
 
 !!! tip "Contribua"
